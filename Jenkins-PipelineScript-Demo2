@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage("Get the things from github") {
             steps {
-                git 'https://github.com/SattiBabu77'
+                git 'https://github.com/SattiBabu77/'
             }
         }
     }
