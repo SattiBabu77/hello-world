@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages {
+        stage("Get the things from github") {
+            steps {
+                git 'https://github.com/SattiBabu77/hello-world.git'
+            }
+        }
+        stages {
+          stage ("Maven Build") {
+            steps {
+              sh 'mvn -B clean package'
+            }
+ }     
+}
